@@ -4,9 +4,8 @@ using UnityEngine;
 public class ObjectDragTransform : MonoBehaviour
 {
 
+    bool pushFlag = false;
     Rigidbody2D rb;
-    float Vector3;
-    Vector3 angularVelocity;
 
     //オブジェクトをクリックしてドラッグ状態にある間呼び出される関数（Unityのマウスイベント）
     void OnMouseDrag()
@@ -25,5 +24,27 @@ public class ObjectDragTransform : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.angularVelocity = 0;
 
-    }   
+        //W入力で+90度回転
+        if (Input.GetKey(KeyCode.W))
+        {
+            if (pushFlag == false)  // 押しっぱなしではないとき
+            {
+                pushFlag = true;    // 押し状態にする
+                transform.Rotate(new Vector3(0, 0, 90));
+                // 何かする（弾を打つ、オブジェクトを出現させるなどのイベント）
+            }
+        }
+        else
+        {
+            pushFlag = false;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Rotate(new Vector3(0, 0, 1));
+        }
+    }  
+    void OnMouseUp()
+    {
+        rb.velocity = Vector3.zero;
+    }
 }
