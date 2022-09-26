@@ -206,7 +206,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &46723199
 Rigidbody2D:
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 140401336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f7072dc0174e45459930b21b34feaed, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b44351ea0c56874bbf12155d649fa29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rcsa: {fileID: 0}
@@ -359,10 +359,7 @@ MonoBehaviour:
   rcse: {fileID: 0}
   rcsf: {fileID: 0}
   rcsg: {fileID: 0}
-  Yaverage: 0
   YAVE: 0
-  YAVETWO: 0
-  tf: {fileID: 0}
 --- !u!1 &664955280
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664955282}
   - component: {fileID: 664955281}
+  - component: {fileID: 664955283}
   m_Layer: 0
   m_Name: Ray G
   m_TagString: Untagged
@@ -392,9 +390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce2f4627bfb9fc48adc80faf450c1e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 50
-  origin: {x: 0, y: 0}
-  YofG: 0
 --- !u!4 &664955282
 Transform:
   m_ObjectHideFlags: 0
@@ -408,8 +403,22 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &664955283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664955280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a878048f2612419c7c2dafbee90d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 50
+  YofG: 0
 --- !u!1 &919664758
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919664760}
   - component: {fileID: 919664759}
+  - component: {fileID: 919664761}
   m_Layer: 0
   m_Name: Ray E
   m_TagString: Untagged
@@ -439,9 +449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ad614978d16e4144b2451c812144b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 50
-  origin: {x: 0, y: 0}
-  YofE: 0
 --- !u!4 &919664760
 Transform:
   m_ObjectHideFlags: 0
@@ -455,8 +462,22 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &919664761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919664758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba7dfafbc8ab74498663b4c42db2ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 50
+  YofE: 0
 --- !u!1 &1133957876
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,7 +634,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1202239395
 GameObject:
@@ -624,7 +645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1202239397}
-  - component: {fileID: 1202239396}
+  - component: {fileID: 1202239398}
   m_Layer: 0
   m_Name: Ray A
   m_TagString: Untagged
@@ -632,21 +653,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1202239396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202239395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9225262c773e51f4494b5204f700fe23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 50
-  origin: {x: 0, y: 0}
-  YofA: 0
 --- !u!4 &1202239397
 Transform:
   m_ObjectHideFlags: 0
@@ -660,8 +666,23 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1202239398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202239395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52ae23bfc9777240a6009c8a08db549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 50
+  origin: {x: 0, y: 0}
+  YofA: 0
 --- !u!1 &1379731826
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +770,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1379731831
 Rigidbody2D:
@@ -1009,7 +1030,6 @@ GameObject:
   - component: {fileID: 1530008690}
   - component: {fileID: 1530008689}
   - component: {fileID: 1530008691}
-  - component: {fileID: 1530008692}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Tumeru
@@ -1131,18 +1151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28565040982af0a4491e1c24e002604e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1530008692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530008684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28565040982af0a4491e1c24e002604e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1541047347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,7 +1160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1541047349}
-  - component: {fileID: 1541047348}
+  - component: {fileID: 1541047350}
   m_Layer: 0
   m_Name: Ray C
   m_TagString: Untagged
@@ -1160,21 +1168,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1541047348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541047347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5ea5e5bc694cd642b39f70433a8a2f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 50
-  origin: {x: 0, y: 0}
-  YofC: 0
 --- !u!4 &1541047349
 Transform:
   m_ObjectHideFlags: 0
@@ -1188,8 +1181,22 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1541047350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541047347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2faf8e3cd34034cbc722af7cf96774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 50
+  YofC: 0
 --- !u!1 &1618587780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1618587782}
   - component: {fileID: 1618587781}
+  - component: {fileID: 1618587783}
   m_Layer: 0
   m_Name: Ray F
   m_TagString: Untagged
@@ -1219,9 +1227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9053e07330144144a8be9474f801dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 50
-  origin: {x: 0, y: 0}
-  YofF: 0
 --- !u!4 &1618587782
 Transform:
   m_ObjectHideFlags: 0
@@ -1235,8 +1240,22 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1618587783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618587780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b0ed4ee53814f44bc7038d1905f291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 50
+  YofF: 0
 --- !u!1 &1870696122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,6 +1266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1870696124}
   - component: {fileID: 1870696125}
+  - component: {fileID: 1870696126}
   m_Layer: 0
   m_Name: Ray D
   m_TagString: Untagged
@@ -1267,7 +1287,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1870696125
 MonoBehaviour:
@@ -1281,8 +1301,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49caac8765a82948bd3f842fd290b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 10
-  origin: {x: 0, y: 0}
+--- !u!114 &1870696126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870696122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f7db01a28c36042a21b4a1ff5e5ab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 50
   YofD: 0
 --- !u!1 &1980428892
 GameObject:
@@ -1293,7 +1324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1980428894}
-  - component: {fileID: 1980428893}
+  - component: {fileID: 1980428895}
   m_Layer: 0
   m_Name: Ray B
   m_TagString: Untagged
@@ -1301,21 +1332,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1980428893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980428892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f42313e25a4cdd444bcb82b5f1b67575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 50
-  origin: {x: 0, y: 0}
-  YofB: 0
 --- !u!4 &1980428894
 Transform:
   m_ObjectHideFlags: 0
@@ -1329,8 +1345,22 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1980428895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980428892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0384850d25afb3d44bb124d9f3e2f4de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 50
+  YofB: 0
 --- !u!1 &2050317535
 GameObject:
   m_ObjectHideFlags: 0

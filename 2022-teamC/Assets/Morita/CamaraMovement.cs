@@ -40,7 +40,7 @@ public class CamaraMovement : MonoBehaviour
         GameObject rg = GameObject.Find("Ray G");
         rcsg = rg.GetComponent<RayCastScriptG>();
         Yaverage = (rcsa.YofA + rcsb.YofB + rcsc.YofC + rcsd.YofD + rcse.YofE + rcsf.YofF + rcsg.YofG) / 7.0;
-        YAVE = Yaverage + 3.5;
+        YAVE = Yaverage;
         YAVETWO = (float)YAVE;
         this.tf.position = new Vector3(0, YAVETWO, -15);
     }
