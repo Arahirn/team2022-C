@@ -11,24 +11,44 @@ public class CreateRangeRandomPosition : MonoBehaviour
     [SerializeField]
     private Transform rangeB;
 
-    private float time;
+    //ŠÔŠÔŠu‚ÌÅ¬’l
+    public float minTime = 2f;
+    //ŠÔŠÔŠu‚ÌÅ‘å’l
+    public float maxTime = 5f;
+   
+    private float interval;
+
+    private float time = 0f;
+    void Start()
+    {
+        //ŠÔŠÔŠu‚ğŒˆ’è‚·‚é
+        interval = GetRandomTime();
+    }
+
 
     void Update()
     {
  
         time = time + Time.deltaTime;
 
-        if (time > 10.0f)
+        if (time > interval )
         {
-            float x = -10;
+            float x = -10f;
             float y = Random.Range(rangeA.position.y, rangeB.position.y);
-            float z = 0;
+            float z = 0f;
 
             Instantiate(createPrefab, new Vector3(x, y, z), createPrefab.transform.rotation);
 
             time = 0f;
+            //Ÿ‚É”­¶‚·‚éŠÔŠÔŠu‚ğŒˆ’è‚·‚é
+            interval = GetRandomTime();
         }
+        //ƒ‰ƒ“ƒ_ƒ€‚ÈŠÔ‚ğ¶¬‚·‚éŠÖ”
+       
     }
-    
+    private float GetRandomTime()
+    {
+        return Random.Range(minTime, maxTime);
+    }
 
 }
