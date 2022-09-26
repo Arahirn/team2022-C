@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ObjectDragTransform : MonoBehaviour
 {
-
+    bool rayFlag = true;
     bool pushFlag = false;
     Rigidbody2D rb;
 
@@ -23,6 +23,12 @@ public class ObjectDragTransform : MonoBehaviour
         //‰ñ“]‚ğ~‚ß‚é
         rb = GetComponent<Rigidbody2D>();
         rb.angularVelocity = 0;
+
+        if (rayFlag == true)//tag‚ğTumeru‚©‚çTumenai‚É•ÏX
+        {
+            rayFlag = false;
+            this.tag = "Tumenai";
+        }
 
         //W“ü—Í‚Å+90“x‰ñ“]
         if (Input.GetKey(KeyCode.W))
@@ -46,5 +52,10 @@ public class ObjectDragTransform : MonoBehaviour
     void OnMouseUp()
     {
         rb.velocity = Vector3.zero;
+        if (rayFlag == false)//Tag‚ğTumeru‚É–ß‚·
+        {
+            rayFlag = true;
+            this.tag = "Tumeru";
+        }
     }
 }
