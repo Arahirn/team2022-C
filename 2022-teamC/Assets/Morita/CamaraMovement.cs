@@ -8,8 +8,12 @@ public class CamaraMovement : MonoBehaviour
     public RayCastScriptB rcsb;
     public RayCastScriptC rcsc;
     public RayCastScriptD rcsd;
+    public RayCastScriptE rcse;
+    public RayCastScriptF rcsf;
+    public RayCastScriptG rcsg;
     double Yaverage;
     public double YAVE;
+    float YAVETWO;
     Transform tf;
 
     // Start is called before the first frame update
@@ -29,10 +33,15 @@ public class CamaraMovement : MonoBehaviour
         rcsc = rc.GetComponent<RayCastScriptC>();
         GameObject rd = GameObject.Find("Ray D");
         rcsd = rd.GetComponent<RayCastScriptD>();
-        Yaverage = (rcsa.YofA + rcsb.YofB + rcsc.YofC + rcsd.YofD) / 4.0;
+        GameObject re = GameObject.Find("Ray E");
+        rcse = re.GetComponent<RayCastScriptE>();
+        GameObject rf = GameObject.Find("Ray F");
+        rcsf = rf.GetComponent<RayCastScriptF>();
+        GameObject rg = GameObject.Find("Ray G");
+        rcsg = rg.GetComponent<RayCastScriptG>();
+        Yaverage = (rcsa.YofA + rcsb.YofB + rcsc.YofC + rcsd.YofD + rcse.YofE + rcsf.YofF + rcsg.YofG) / 7.0;
         YAVE = Yaverage + 3.5;
-        float YAVETWO = (float)YAVE;
+        YAVETWO = (float)YAVE;
         this.tf.position = new Vector3(0, YAVETWO, -15);
-
     }
 }
