@@ -206,7 +206,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &46723199
 Rigidbody2D:
@@ -369,7 +369,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 664955282}
-  - component: {fileID: 664955281}
   - component: {fileID: 664955283}
   m_Layer: 0
   m_Name: Ray G
@@ -378,18 +377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &664955281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664955280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ce2f4627bfb9fc48adc80faf450c1e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &664955282
 Transform:
   m_ObjectHideFlags: 0
@@ -428,7 +415,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919664760}
-  - component: {fileID: 919664759}
   - component: {fileID: 919664761}
   m_Layer: 0
   m_Name: Ray E
@@ -437,18 +423,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &919664759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919664758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad614978d16e4144b2451c812144b59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &919664760
 Transform:
   m_ObjectHideFlags: 0
@@ -491,7 +465,6 @@ GameObject:
   - component: {fileID: 1133957881}
   - component: {fileID: 1133957880}
   - component: {fileID: 1133957879}
-  - component: {fileID: 1133957878}
   - component: {fileID: 1133957877}
   m_Layer: 0
   m_Name: Cube (2)
@@ -501,18 +474,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1133957877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133957876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28565040982af0a4491e1c24e002604e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1133957878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -536,10 +497,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: d4881dc2ae7d6084c82ee00b39a53f16, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -696,7 +657,6 @@ GameObject:
   - component: {fileID: 1379731834}
   - component: {fileID: 1379731828}
   - component: {fileID: 1379731831}
-  - component: {fileID: 1379731832}
   - component: {fileID: 1379731833}
   - component: {fileID: 1379731836}
   - component: {fileID: 1379731835}
@@ -770,7 +730,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1379731831
 Rigidbody2D:
@@ -784,27 +744,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0
-  m_GravityScale: 0.1
-  m_Material: {fileID: 0}
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: d4881dc2ae7d6084c82ee00b39a53f16, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1379731832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379731826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28565040982af0a4491e1c24e002604e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1379731833
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -969,10 +917,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: d4881dc2ae7d6084c82ee00b39a53f16, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1114,10 +1062,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: d4881dc2ae7d6084c82ee00b39a53f16, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1206,7 +1154,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1618587782}
-  - component: {fileID: 1618587781}
   - component: {fileID: 1618587783}
   m_Layer: 0
   m_Name: Ray F
@@ -1215,18 +1162,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1618587781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618587780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9053e07330144144a8be9474f801dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1618587782
 Transform:
   m_ObjectHideFlags: 0
@@ -1265,7 +1200,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870696124}
-  - component: {fileID: 1870696125}
   - component: {fileID: 1870696126}
   m_Layer: 0
   m_Name: Ray D
@@ -1289,18 +1223,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1870696125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870696122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f49caac8765a82948bd3f842fd290b0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1870696126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,10 +1316,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: d4881dc2ae7d6084c82ee00b39a53f16, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
