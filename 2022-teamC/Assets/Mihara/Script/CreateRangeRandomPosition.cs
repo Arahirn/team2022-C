@@ -15,7 +15,7 @@ public class CreateRangeRandomPosition : MonoBehaviour
     public float minTime = 2f;
     //ŠÔŠÔŠu‚ÌÅ‘å’l
     public float maxTime = 5f;
-   
+
     private float interval;
 
     private float time = 0f;
@@ -28,10 +28,10 @@ public class CreateRangeRandomPosition : MonoBehaviour
 
     void Update()
     {
- 
+
         time = time + Time.deltaTime;
 
-        if (time > interval )
+        if (time > interval)
         {
             float x = -10f;
             float y = Random.Range(rangeA.position.y, rangeB.position.y);
@@ -44,11 +44,12 @@ public class CreateRangeRandomPosition : MonoBehaviour
             interval = GetRandomTime();
         }
         //ƒ‰ƒ“ƒ_ƒ€‚ÈŠÔ‚ğ¶¬‚·‚éŠÖ”
-       
+
     }
     private float GetRandomTime()
     {
         return Random.Range(minTime, maxTime);
     }
+
 
 }

@@ -11,7 +11,7 @@ public class Out : MonoBehaviour
    
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Block")
+        if (col.gameObject.tag == "Tumeru")
         {
             GameoverPanel.SetActive(true);
          

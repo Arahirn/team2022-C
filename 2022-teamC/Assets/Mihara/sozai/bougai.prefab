@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2008513292837198747}
   - component: {fileID: 2008513292837198746}
   - component: {fileID: 2008513292837198750}
+  - component: {fileID: 5151574411907445736}
   m_Layer: 0
   m_Name: bougai
   m_TagString: Untagged
@@ -144,5 +145,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5aa853db2aa878a43be81510d0d137c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5151574411907445736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008513292837198745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee0876d2debc7e446bbe3a8866d80dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
