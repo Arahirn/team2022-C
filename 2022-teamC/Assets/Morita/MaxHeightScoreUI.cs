@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class CamaraMovement : MonoBehaviour
+public class MaxHeightScoreUI : MonoBehaviour
 {
     public RayCastScriptA rcsa;
     public RayCastScriptB rcsb;
@@ -11,17 +12,18 @@ public class CamaraMovement : MonoBehaviour
     public RayCastScriptE rcse;
     public RayCastScriptF rcsf;
     public RayCastScriptG rcsg;
-    double Yaverage;
-    public double YAVE;
-    float YAVETWO;
-    Transform tf;
+    public float max;
+    string MAX;
+    Text text;
+    float HighScore;
 
     // Start is called before the first frame update
     void Start()
     {
-        tf = this.GetComponent<Transform>();
+        HighScore = 0f;
     }
 
+    // Update is called once per frame
     void Update()
     {
         GameObject ra = GameObject.Find("Ray A"); //Ray Aっていうオブジェクトを探す
@@ -38,9 +40,13 @@ public class CamaraMovement : MonoBehaviour
         rcsf = rf.GetComponent<RayCastScriptF>();
         GameObject rg = GameObject.Find("Ray G");
         rcsg = rg.GetComponent<RayCastScriptG>();
-        Yaverage = (rcsa.YofA + rcsb.YofB + rcsc.YofC + rcsd.YofD + rcse.YofE + rcsf.YofF + rcsg.YofG) / 7.0;
-        YAVE = Yaverage + 3.5;
-        YAVETWO = (float)YAVE;
-        this.tf.position = new Vector3(0, YAVETWO, -15);
+        text = GameObject.Find("Score").GetComponent<Text>();
+        max = Mathf.Max(rcsa.YofA, rcsb.YofB, rcsc.YofC, rcsd.YofD, rcse.YofE, rcsf.YofF, rcsg.YofG);
+        if (max > HighScore)
+        {
+            HighScore = max;
+        }
+        MAX = HighScore.ToString();
+        this.text.text = MAX;
     }
 }

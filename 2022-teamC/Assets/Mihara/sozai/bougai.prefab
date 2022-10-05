@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2008513292837198746}
   - component: {fileID: 2008513292837198750}
   - component: {fileID: 5151574411907445736}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: bougai
-  m_TagString: Untagged
+  m_TagString: Tumenai
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
