@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 
 public class ObjectDragTransform : MonoBehaviour
 {
+    [SerializeField] private GameObject Object;
     bool rayFlag = true;
     bool pushFlag = false;
     Rigidbody2D rb;
@@ -31,6 +32,7 @@ public class ObjectDragTransform : MonoBehaviour
             Vector2 vec = objectWorldPoint - transform.position;
             float length = vec.magnitude;
             rb.mass = 1f;
+            gameObject.layer = 2;
 
             if (length > 0.5f)
             {
@@ -74,6 +76,7 @@ public class ObjectDragTransform : MonoBehaviour
 
     void OnMouseUp()
     {
+        gameObject.layer = 0;
         rb.velocity = Vector3.zero;
         if (rayFlag == false)//Tag‚ðTumeru‚É–ß‚·
         {

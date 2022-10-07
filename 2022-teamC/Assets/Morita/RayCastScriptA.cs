@@ -30,6 +30,7 @@ public class RayCastScriptA : MonoBehaviour
         else if (hit.collider & hit.collider.gameObject.CompareTag("Tumenai"))//Tag‚ªTumenai‚È‚çnull‚ð•\Ž¦
         {
             Debug.Log("null");
+            YofA = 0f;
         }
     }
 }

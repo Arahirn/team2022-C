@@ -40,7 +40,7 @@ public class MaxHeightScoreUI : MonoBehaviour
         rcsf = rf.GetComponent<RayCastScriptF>();
         GameObject rg = GameObject.Find("Ray G");
         rcsg = rg.GetComponent<RayCastScriptG>();
-        text = GameObject.Find("Text (Legacy)").GetComponent <Text>();
+        text = GameObject.Find("Score").GetComponent<Text>();
         max = Mathf.Max(rcsa.YofA, rcsb.YofB, rcsc.YofC, rcsd.YofD, rcse.YofE, rcsf.YofF, rcsg.YofG);
         if (max > HighScore)
         {

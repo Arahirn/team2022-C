@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    
+
 
     public GameObject targetObject;
 
@@ -30,5 +30,5 @@ public class ScoreManager : MonoBehaviour
         this.GetComponent<Text>().text = HighScore.ToString("F2") + "m";
 
     }
-   
+
 }

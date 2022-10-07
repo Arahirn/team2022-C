@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartController : MonoBehaviour
+public class Startcontroller : MonoBehaviour
 {
-    public void SwitchScene()
+    // Start is called before the first frame update
+    void Start()
     {
-        SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void PushButton()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
-
