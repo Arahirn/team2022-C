@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tumeru
   - Tumenai
+  - Block
+  - Spawn
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Spawn
   - 
   - 
   - 
@@ -40,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Backgrounds
+    uniqueID: 2093274753
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

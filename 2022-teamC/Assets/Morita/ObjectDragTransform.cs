@@ -84,6 +84,7 @@ public class ObjectDragTransform : MonoBehaviour
             this.tag = "Tumeru";
             rb.mass = 50f; //オブジェクトの質量を設定
             DragCount = DragCount+1;
+           
         }
     }
 }
