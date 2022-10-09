@@ -22,7 +22,6 @@ public class CamaraMovement : MonoBehaviour
         tf = this.GetComponent<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         GameObject ra = GameObject.Find("Ray A"); //Ray Aっていうオブジェクトを探す
@@ -40,7 +39,7 @@ public class CamaraMovement : MonoBehaviour
         GameObject rg = GameObject.Find("Ray G");
         rcsg = rg.GetComponent<RayCastScriptG>();
         Yaverage = (rcsa.YofA + rcsb.YofB + rcsc.YofC + rcsd.YofD + rcse.YofE + rcsf.YofF + rcsg.YofG) / 7.0;
-        YAVE = Yaverage;
+        YAVE = Yaverage + 3.5;
         YAVETWO = (float)YAVE;
         this.tf.position = new Vector3(0, YAVETWO, -15);
     }
