@@ -26,8 +26,8 @@ public class MaxHeightScoreUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject ra = GameObject.Find("Ray A"); //Ray A‚Á‚Ä‚¢‚¤ƒIƒuƒWƒFƒNƒg‚ğ’T‚·
-        rcsa = ra.GetComponent<RayCastScriptA>();@//•t‚¢‚Ä‚¢‚éƒXƒNƒŠƒvƒg‚ğæ“¾
+        GameObject ra = GameObject.Find("Ray A"); //Ray Aã£ã¦ã„ã†ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¢ã™
+        rcsa = ra.GetComponent<RayCastScriptA>();ã€€//ä»˜ã„ã¦ã„ã‚‹ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’å–å¾—
         GameObject rb = GameObject.Find("Ray B");
         rcsb = rb.GetComponent<RayCastScriptB>();
         GameObject rc = GameObject.Find("Ray C");
@@ -40,7 +40,9 @@ public class MaxHeightScoreUI : MonoBehaviour
         rcsf = rf.GetComponent<RayCastScriptF>();
         GameObject rg = GameObject.Find("Ray G");
         rcsg = rg.GetComponent<RayCastScriptG>();
+
         text = GameObject.Find("Score").GetComponent<Text>();
+
         max = Mathf.Max(rcsa.YofA, rcsb.YofB, rcsc.YofC, rcsd.YofD, rcse.YofE, rcsf.YofF, rcsg.YofG);
         if (max > HighScore)
         {
