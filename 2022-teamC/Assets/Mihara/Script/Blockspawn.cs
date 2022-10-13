@@ -23,7 +23,7 @@ public class Blockspawn : MonoBehaviour
     private IEnumerator SpawnManager()
     {
         // 4•b‘Ò‚Â
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         number = Random.Range(0, Blocks.Length);
         Instantiate(Blocks[number], transform.position, transform.rotation);
         isCalledOnce = false;

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayCastScriptCA : MonoBehaviour
+public class RayCastScriptAB : MonoBehaviour
 {
     //Rayの長さ
     public float maxDistance = 50;
     public Vector2 origin;
-    public float YofCA;
+    public float YofAB;
     public RaycastHit2D hit;
 
     public void Update()
@@ -24,13 +24,13 @@ public class RayCastScriptCA : MonoBehaviour
         if (hit.collider & hit.collider.gameObject.CompareTag("Tumeru"))//TagがTumeruならrayが当たったオブジェクトの名前を表示
         {
             Debug.Log(hit.point);
-            Debug.Log(YofCA);
-            YofCA = hit.point.y; //rayが当たった座標のY座標をYofAという名前の変数で宣言
+            Debug.Log(YofAB);
+            YofAB = hit.point.y; //rayが当たった座標のY座標をYofAという名前の変数で宣言
         }
         else if (hit.collider & hit.collider.gameObject.CompareTag("Tumenai"))//TagがTumenaiならnullを表示
         {
             Debug.Log("null");
-            YofCA = 0f;
+            YofAB = 0f;
         }
     }
 }

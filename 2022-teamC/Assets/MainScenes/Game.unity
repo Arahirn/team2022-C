@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42321118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: -2, z: 0}
+  m_LocalPosition: {x: 9, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 492195363}
   - component: {fileID: 492195362}
   m_Layer: 0
-  m_Name: Ray BA
+  m_Name: Ray AB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 50
   origin: {x: 0, y: 0}
-  YofBA: 0
+  YofAB: 0
 --- !u!114 &492195363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,6 +1044,28 @@ MonoBehaviour:
   rcse: {fileID: 0}
   rcsf: {fileID: 0}
   rcsg: {fileID: 0}
+  rcsh: {fileID: 0}
+  rcsi: {fileID: 0}
+  rcsj: {fileID: 0}
+  rcsk: {fileID: 0}
+  rcsl: {fileID: 0}
+  rcsm: {fileID: 0}
+  rcsn: {fileID: 0}
+  rcso: {fileID: 0}
+  rcsp: {fileID: 0}
+  rcsq: {fileID: 0}
+  rcsr: {fileID: 0}
+  rcss: {fileID: 0}
+  rcst: {fileID: 0}
+  rcsu: {fileID: 0}
+  rcsv: {fileID: 0}
+  rcsw: {fileID: 0}
+  rcsx: {fileID: 0}
+  rcsy: {fileID: 0}
+  rcsz: {fileID: 0}
+  rcsaa: {fileID: 0}
+  rcsab: {fileID: 0}
+  rcsac: {fileID: 0}
   YAVE: 0
 --- !u!1 &620786142
 GameObject:
@@ -1598,8 +1620,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027655752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0595, y: -1.5, z: 0.023918841}
-  m_LocalScale: {x: 15.1185, y: 3, z: 1}
+  m_LocalPosition: {x: 0.0595, y: -2.0651, z: 0.023918841}
+  m_LocalScale: {x: 15.1185, y: 4.1301003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1835,6 +1857,28 @@ MonoBehaviour:
   rcse: {fileID: 0}
   rcsf: {fileID: 0}
   rcsg: {fileID: 0}
+  rcsh: {fileID: 0}
+  rcsi: {fileID: 0}
+  rcsj: {fileID: 0}
+  rcsk: {fileID: 0}
+  rcsl: {fileID: 0}
+  rcsm: {fileID: 0}
+  rcsn: {fileID: 0}
+  rcso: {fileID: 0}
+  rcsp: {fileID: 0}
+  rcsq: {fileID: 0}
+  rcsr: {fileID: 0}
+  rcss: {fileID: 0}
+  rcst: {fileID: 0}
+  rcsu: {fileID: 0}
+  rcsv: {fileID: 0}
+  rcsw: {fileID: 0}
+  rcsx: {fileID: 0}
+  rcsy: {fileID: 0}
+  rcsz: {fileID: 0}
+  rcsaa: {fileID: 0}
+  rcsab: {fileID: 0}
+  rcsac: {fileID: 0}
   max: 0
 --- !u!114 &1122687685
 MonoBehaviour:
@@ -2354,8 +2398,8 @@ MonoBehaviour:
   createPrefab: {fileID: 2008513292837198745, guid: 84128f83cec3e0544bbb99ba5f5ef785, type: 3}
   rangeA: {fileID: 42321119}
   rangeB: {fileID: 1848959977}
-  minTime: 4
-  maxTime: 8
+  minTime: 3
+  maxTime: 6
 --- !u!4 &1355181908
 Transform:
   m_ObjectHideFlags: 0
@@ -2430,7 +2474,7 @@ GameObject:
   - component: {fileID: 1416563384}
   - component: {fileID: 1416563383}
   m_Layer: 0
-  m_Name: Ray CA
+  m_Name: Ray AC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2465,7 +2509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 50
   origin: {x: 0, y: 0}
-  YofCA: 0
+  YofAC: 0
 --- !u!114 &1416563384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3207,6 +3251,28 @@ MonoBehaviour:
   rcse: {fileID: 0}
   rcsf: {fileID: 0}
   rcsg: {fileID: 0}
+  rcsh: {fileID: 0}
+  rcsi: {fileID: 0}
+  rcsj: {fileID: 0}
+  rcsk: {fileID: 0}
+  rcsl: {fileID: 0}
+  rcsm: {fileID: 0}
+  rcsn: {fileID: 0}
+  rcso: {fileID: 0}
+  rcsp: {fileID: 0}
+  rcsq: {fileID: 0}
+  rcsr: {fileID: 0}
+  rcss: {fileID: 0}
+  rcst: {fileID: 0}
+  rcsu: {fileID: 0}
+  rcsv: {fileID: 0}
+  rcsw: {fileID: 0}
+  rcsx: {fileID: 0}
+  rcsy: {fileID: 0}
+  rcsz: {fileID: 0}
+  rcsaa: {fileID: 0}
+  rcsab: {fileID: 0}
+  rcsac: {fileID: 0}
   max: 0
 --- !u!1 &1745887011
 GameObject:
