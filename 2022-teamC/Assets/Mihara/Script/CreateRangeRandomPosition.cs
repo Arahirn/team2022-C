@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CreateRangeRandomPosition : MonoBehaviour
 {
+    public bool createBougaiFlag;
     [SerializeField]
     private GameObject createPrefab;
     [SerializeField]
@@ -38,14 +39,18 @@ public class CreateRangeRandomPosition : MonoBehaviour
             float z = 0f;
 
             Instantiate(createPrefab, new Vector3(x, y, z), createPrefab.transform.rotation);
+            createBougaiFlag = true;
 
             time = 0f;
             //Ÿ‚É”­¶‚·‚éŠÔŠÔŠu‚ğŒˆ’è‚·‚é
             interval = GetRandomTime();
         }
-        //ƒ‰ƒ“ƒ_ƒ€‚ÈŠÔ‚ğ¶¬‚·‚éŠÖ”
-
+        else
+        {
+            createBougaiFlag = false;
+        }
     }
+    //ƒ‰ƒ“ƒ_ƒ€‚ÈŠÔ‚ğ¶¬‚·‚éŠÖ”
     private float GetRandomTime()
     {
         return Random.Range(minTime, maxTime);

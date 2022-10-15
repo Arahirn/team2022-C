@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-
 guid: ee0876d2debc7e446bbe3a8866d80dfd
-
-
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - FishSound: {fileID: 8300000, guid: 5f64fc115c36e814692a473cbb3ff26c, type: 3}
+  - CRRP: {instanceID: 0}
+  - GameoverPanel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

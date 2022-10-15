@@ -6,16 +6,20 @@ using UnityEngine.UI;
 
 public class TimeCounter : MonoBehaviour
 {
+    public AudioClip GameOverSound;
+    private AudioSource audioSource;
     public GameObject GameoverPanel;
     public int countdownMinutes = 3;
-    private float countdownSeconds;
+    public float countdownSeconds;
     private Text timeText;
+    bool isCalledOnce = false;
 
     private void Start()
     {
         
         timeText = GetComponent<Text>();
         countdownSeconds = countdownMinutes * 60;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -24,11 +28,12 @@ public class TimeCounter : MonoBehaviour
         var span = new TimeSpan(0, 0, (int)countdownSeconds);
         timeText.text = span.ToString(@"m\:ss");
 
-        if (countdownSeconds <= 0)
+        if ((countdownSeconds <= 0) && (!isCalledOnce))
         {
             GameoverPanel.SetActive(true);
-            Destroy(this.gameObject);
-       
+            audioSource.PlayOneShot(GameOverSound);
+            //ゲームオーバーの音を鳴らす
+            isCalledOnce = true;
         }
     }
 }

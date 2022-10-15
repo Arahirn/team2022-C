@@ -34,6 +34,7 @@ public class MaxHeightScoreUI : MonoBehaviour
     public RayCastScriptAA rcsaa;
     public RayCastScriptAB rcsab;
     public RayCastScriptAC rcsac;
+    public Text ScoreR;
 
     public float max;
     string MAX;
@@ -117,5 +118,6 @@ public class MaxHeightScoreUI : MonoBehaviour
         }
         MAX = HighScore.ToString("N2");
         this.text.text = MAX + "m";
+        ScoreR.text = MAX + "m";
     }
 }
